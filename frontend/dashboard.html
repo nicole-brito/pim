@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Sistema de Gestão Escolar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container dashboard" id="dashboard">
+        <h1>Dashboard - Bem-vindo!</h1>
+        <button id="logout">Sair</button>
+        
+        <div id="menu">
+            <button onclick="carregarNotas()">Visualizar Notas</button>
+            <button onclick="buscarAluno()">Buscar Aluno</button>
+            <button id="btnRelatorio" onclick="gerarRelatorio()" style="display: none;">Gerar Relatório (Prof)</button>
+        </div>
+        
+        <div id="conteudo">
+            <!-- Conteúdo dinâmico carregado via JS -->
+        </div>
+    </div>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
